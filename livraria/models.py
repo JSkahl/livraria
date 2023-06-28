@@ -1,11 +1,10 @@
 from django.db import models
 
 class Genero(models.Model):
-    descricao = models.CharField(max_length=100)
+    nome = models.CharField(max_length=100)
 
     def __str__(self):
-        
-        return self.descricao
+        return self.nome
     
 class Editora(models.Model):
     nome = models.CharField(max_length=100)
@@ -37,6 +36,10 @@ class Livro(models.Model):
 
     editora = models.ForeignKey(
         Editora, on_delete=models.PROTECT, related_name="livros"
+    )
+
+    autores = models.ManyToManyField(
+        Autor, related_name="livros"
     )
 
     def __str__(self):
