@@ -12,6 +12,7 @@ drf-spectacular==0.26.3
 inflection==0.5.1
 jsonschema==4.18.0
 jsonschema-specifications==2023.6.1
+mysqlclient==2.2.0
 Pillow==10.0.0
 pyjwt==2.7.0
 python-magic==0.4.27
@@ -21,6 +22,5 @@ referencing==0.29.1
 rpds-py==0.8.4
 setuptools==68.0.0
 sqlparse==0.4.4
-typing-extensions==4.7.1
 uploader==0.5.1
 uritemplate==4.1.1
