@@ -3,7 +3,7 @@
 
     <router-link :to="{ name: 'home' }">Home</router-link>
       <div class="espaco-header"></div>
-    <router-link to="/generos">Generos</router-link>
+    <router-link to="/generos">Gêneros</router-link>
       <div class="espaco-header"></div>
     <router-link to="/editoras">Editoras</router-link>
       <div class="espaco-header"></div>
